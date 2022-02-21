@@ -1,0 +1,135 @@
+<!---header--->
+<%- include("partial/header") %>
+<!---end header--->
+<!---nav--->
+<%- include("partial/nav")%>
+<!---end nav--->
+<!-- ======= Hero Section ======= -->
+<!-- <section id="hero" class="d-flex align-items-center">
+  <div
+    class="container position-relative"
+    data-aos="fade-up"
+    data-aos-delay="100"
+  >
+    <div class="row justify-content-center">
+      <div class="col-xl-7 col-lg-9 text-center">
+        <h1>One Page Bootstrap Website Template</h1>
+        <h2>We are team of talented designers</h2>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End Hero -->
+<!---main--->
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7 col-lg-5">
+        <div class="wrap">
+          <div class="login-wrap p-4 p-md-5">
+            <div class="d-flex">
+              <div class="w-100">
+                <h3 class="mb-4">Sign Up</h3>
+              </div>
+            </div>
+            <form action="/add-register" method="post" class="signin-form">
+              <div class="form-group mt-3">
+                <label class="form-control-placeholder" for="username"
+                  >Username</label
+                >
+                <input type="text" class="form-control" name="username" required />
+              </div>
+              <div class="form-group mt-3">
+                <label class="form-control-placeholder" for="email"
+                  >Email</label
+                >
+                <input type="email" class="form-control" name="email" required />
+              </div>
+              <div class="form-group mt-3">
+                <label class="form-control-placeholder" for="phone"
+                  >Phone</label
+                >
+                <input type="number" class="form-control" name="phone" required />
+              </div>
+              <div class="form-group mt-3">
+                <label class="form-control-placeholder" for="city"
+                  >City</label
+                >
+                <input type="text" class="form-control" name="city" required />
+              </div>
+              <div class="form-group mt-3">
+                <label class="form-control-placeholder" for="qualification"
+                  >Qualification</label
+                >
+                <input type="text" class="form-control" name="qualification" required />
+              </div>
+              <div class="form-group">
+                <label class="form-control-placeholder" for="password"
+                  >Password</label
+                >
+                <input
+                  id="password-field"
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  required
+                />
+
+                <!-- <span
+                  toggle="#password-field"
+                  class="fa fa-fw fa-eye field-icon toggle-password"
+                ></span> -->
+              </div>
+              <div class="form-group">
+                <label class="form-control-placeholder" for="confirmPassword"
+                  >Confirm Password</label
+                >
+                <input
+                  id="password-field"
+                  type="password"
+                  class="form-control"
+                  name="confirmPassword"
+                  required
+                />
+
+                <!-- <span
+                  toggle="#password-field"
+                  class="fa fa-fw fa-eye field-icon toggle-password"
+                ></span> -->
+              </div>
+              <br>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="form-control btn btn-primary rounded submit px-3"
+                >
+                  Sign Up
+                </button>
+              </div>
+              <!-- <div class="form-group d-md-flex">
+                <div class="w-50 text-left">
+                  <label class="checkbox-wrap checkbox-primary mb-0"
+                    >Remember Me
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="w-50 text-md-right">
+                  <a href="#">Forgot Password</a>
+                </div> 
+              </div> -->
+            </form> <br>
+            <p class="text-center">
+              Already have an account?
+              <a data-toggle="tab" href="/login">Log In</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!---main--->
+  <%- include("partial/footer") %>
+</div>

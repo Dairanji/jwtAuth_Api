@@ -1,0 +1,44 @@
+<!---header--->
+<%- include("partial/header") %>
+<!---end header--->
+<!---nav--->
+<%- include("partial/nav")%>
+<!---end nav--->
+<!---main--->
+<section>
+    <body>
+        <div class="container">
+          <h1>Users info</h1>
+          <br />
+          <br />
+          <br />
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>Qualification</th>
+              </tr>
+            </thead>
+            <%if(viewdata.length>0) {%>
+            <tbody>
+              <% for(let data of viewdata) {if(data.status!=0) {%>
+              <tr>
+                <td><%= data.name%></td>
+                <td><%= data.email%></td>
+                <td><%= data.city%></td>
+                <td><%= data.qualification%></td>
+              </tr>
+            </tbody>
+            <%}} } else{%>
+            <h2>Database Empty.No data found</h2>
+            <%}%>
+          </table>
+        </div>
+      </body>
+</section>
+<!---end main--->
+<!---Footer--->
+<%- include("partial/footer") %>
+</div>
